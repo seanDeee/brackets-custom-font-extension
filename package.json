@@ -1,0 +1,18 @@
+{
+  "name": "seandee.cstm-font",
+  "title": "Custom Fonts",
+  "description": "A simple extension that changes the Brackets UI fonts",
+  "homepage": "https://github.com/seanDeee/brackets-custom-font",
+  "version": "1.0.0",
+  "author": "Sean Dee",
+  "license": "MIT",
+  "engines": {
+    "brackets": ">=0.42.0"
+  },
+  "keywords": [
+    "font",
+    "Font",
+    "Fonts",
+    "fnt"
+  ]
+}
