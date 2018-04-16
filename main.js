@@ -80,9 +80,9 @@ define(function (require, exports, module) {
         displayAbout += "<p>&#1023; Author: SeanDee Dela Torre</p> <p>&#1023; Github Profile: <a href=\"https://github.com/seanDeee/\" >seanDeee</a></p><p>&#1023; GitHub Repository: <a href=\"https://github.com/seanDeee/brackets-custom-extension\" >https://github.com/seanDeee/brackets-custom-font-extension</a></p>";
         displayAbout += "&#1023; Contact: sjdt17@gmail.com<br><hr>";
         
-        displayAbout += "<br><br>";
+        displayAbout += "<br>";
         
-        displayAbout += "&#1023; More Updates Coming Soon...<br>";
+        displayAbout += "More Updates Coming Soon...<br>";
         // show modal dialog with "About Extension" information
         Dialogs.showModalDialog('a', "About Extension", displayAbout);
     }
