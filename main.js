@@ -75,10 +75,14 @@ define(function (require, exports, module) {
     function aboutModal() {
         var displayAbout = "<img style=\"float: left; margin:11px 5px 0px 0px; padding:0;\" src=\"styles/images/brackets_icon.svg\" alt=\"logo\" width=\"30\" height=\"30\">";
         displayAbout += "<h3 style=\"margin-bottom:-5px;\">Font Select</h3></span>\n<small>version: 1.0.0</small><br><br>\n";
-        displayAbout += "<span style=\"letter-spacing: 1px;\">A Simple Font Select for Brackets";
-        displayAbout += "<span style=\"letter-spacing: 1px;\">You can Select a Custom font in the Fonts Menu";
+        displayAbout += "<center><span style=\"letter-spacing: 1px;\">A Simple Font Select for Brackets<br>\n";
+        displayAbout += "<span style=\"letter-spacing: 1px;\">You can Select a Custom font in the Fonts Menu</center><br>\n";
         displayAbout += "<p>&#1023; Author: SeanDee Dela Torre</p> <p>&#1023; Github Profile: <a href=\"https://github.com/seanDeee/\" >seanDeee</a></p><p>&#1023; GitHub Repository: <a href=\"https://github.com/seanDeee/brackets-custom-extension\" >https://github.com/seanDeee/brackets-custom-font-extension</a></p>";
         displayAbout += "&#1023; Contact: sjdt17@gmail.com<br><hr>";
+        
+        displayAbout += "<br><br>";
+        
+        displayAbout += "&#1023; More Updates Coming Soon...<br>";
         // show modal dialog with "About Extension" information
         Dialogs.showModalDialog('a', "About Extension", displayAbout);
     }
@@ -151,5 +155,6 @@ define(function (require, exports, module) {
     //menu.addMenuItem(custom_f13);
     menu.addMenuItem(custom_f14);
 
+    menu.addMenuDivider();
     menu.addMenuItem(modal_about);
 });
