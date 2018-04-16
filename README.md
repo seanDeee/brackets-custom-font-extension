@@ -18,8 +18,11 @@ A Simple Font Select of you Choice for [Brackets](https://github.com/adobe/brack
 
 
 ## Screenshot
- **Arial Font Style**
+
+## Arial Font Style
 ![Custom Font Select](https://github.com/seanDeee/brackets-custom-font-extension/blob/master/Screenshot/Arial.png)
+
+
 
 
 ## Coming soon...... Updates 1.0.1
