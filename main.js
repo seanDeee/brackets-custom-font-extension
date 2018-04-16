@@ -70,6 +70,20 @@ define(function (require, exports, module) {
 
 
 
+
+    //modal function in Custom Menu
+    function aboutModal() {
+        var displayAbout = "<img style=\"float: left; margin:11px 5px 0px 0px; padding:0;\" src=\"styles/images/brackets_icon.svg\" alt=\"logo\" width=\"30\" height=\"30\">";
+        displayAbout += "<h3 style=\"margin-bottom:-5px;\">Font Select</h3></span>\n<small>version: 1.0.0</small><br><br>\n";
+        displayAbout += "<span style=\"letter-spacing: 1px;\">A Simple Font Select for Brackets";
+        displayAbout += "<span style=\"letter-spacing: 1px;\">You can Select a Custom font in the Fonts Menu";
+        displayAbout += "<p>&#1023; Author: SeanDee Dela Torre</p> <p>&#1023; Github Profile: <a href=\"https://github.com/seanDeee/\" >seanDeee</a></p><p>&#1023; GitHub Repository: <a href=\"https://github.com/seanDeee/brackets-custom-extension\" >https://github.com/seanDeee/brackets-custom-font-extension</a></p>";
+        displayAbout += "&#1023; Contact: sjdt17@gmail.com<br><hr>";
+        // show modal dialog with "About Extension" information
+        Dialogs.showModalDialog('a', "About Extension", displayAbout);
+    }
+
+
     // Font Extension menu item
     var custom_f1 = "cstm1.fonts";
     CommandManager.register("Default ", custom_f1, customFont1);
@@ -117,8 +131,10 @@ define(function (require, exports, module) {
     Menus.addMenu('Fonts', 'fonts.main');
     var menu = Menus.getMenu('fonts.main');
 
-    
-    
+    // About Extension menu item
+    var modal_about = "about.fonts";
+    CommandManager.register("About Extension", modal_about, aboutModal);
+
     //Menu List In Alphabetical Ordered
     menu.addMenuItem(custom_f1);
     menu.addMenuItem(custom_f2);
@@ -134,4 +150,6 @@ define(function (require, exports, module) {
     menu.addMenuItem(custom_f12);
     //menu.addMenuItem(custom_f13);
     menu.addMenuItem(custom_f14);
+
+    menu.addMenuItem(modal_about);
 });
