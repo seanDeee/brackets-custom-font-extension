@@ -54,21 +54,21 @@ define(function (require, exports, module) {
     function customFont11() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: monospace !important;}");
     }
-
+    
     function customFont12() {
+        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Segeo UI, sans-serif !important;}");
+    }
+    
+    function customFont13() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: 'Times New Roman', Times !important;}");
     }
 
-    function customFont13() {
+    function customFont14() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Trebuchet MS, sans-serif !important;}");
     }
 
-    function customFont14() {
-        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Verdana, sans-serif !important;}");
-    }
-    
     function customFont15() {
-        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Segeo UI, sans-serif !important;}");
+        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Verdana, sans-serif !important;}");
     }
 
     //modal function in Custom Menu
@@ -120,18 +120,18 @@ define(function (require, exports, module) {
 
     var custom_f11 = "cstm11.fonts";
     CommandManager.register("monospace", custom_f11, customFont11);
-
+    
     var custom_f12 = "cstm12.fonts";
-    CommandManager.register("Times New Roman", custom_f12, customFont12);
+    CommandManager.register("Segeo UI", custom_f12, customFont12);
 
     var custom_f13 = "cstm13.fonts";
-    CommandManager.register("Trebuchet MS", custom_f13, customFont13);
+    CommandManager.register("Times New Roman", custom_f13, customFont13);
 
     var custom_f14 = "cstm14.fonts";
-    CommandManager.register("Verdana", custom_f14, customFont14);
-    
+    CommandManager.register("Trebuchet MS", custom_f14, customFont14);
+
     var custom_f15 = "cstm15.fonts";
-    CommandManager.register("Segeo UI", custom_f15, customFont15);
+    CommandManager.register("Verdana", custom_f15, customFont15);
 
     // extension main menu
     Menus.addMenu('Fonts', 'fonts.main');
