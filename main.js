@@ -67,6 +67,10 @@ define(function (require, exports, module) {
     function customFont14() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Verdana, sans-serif !important;}");
     }
+    
+    function customFont15() {
+        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Segeo UI, sans-serif !important;}");
+    }
 
 
 
@@ -125,11 +129,14 @@ define(function (require, exports, module) {
     var custom_f12 = "cstm12.fonts";
     CommandManager.register("Times New Roman", custom_f12, customFont12);
 
-    // var custom_f13 = "cstm13.fonts";
-    //CommandManager.register("Trebuchet MS", custom_f13, customFont11);
+    //var custom_f13 = "cstm13.fonts";
+    //CommandManager.register("Trebuchet MS", custom_f13, customFont13);
 
     var custom_f14 = "cstm14.fonts";
     CommandManager.register("Verdana", custom_f14, customFont14);
+    
+    var custom_f15 = "cstm15.fonts";
+    CommandManager.register("Segeo UI", custom_f15, customFont15);
 
     // extension main menu
     Menus.addMenu('Fonts', 'fonts.main');
@@ -154,7 +161,8 @@ define(function (require, exports, module) {
     menu.addMenuItem(custom_f12);
     //menu.addMenuItem(custom_f13);
     menu.addMenuItem(custom_f14);
-
+    menu.addMenuItem(custom_f15);
+    
     menu.addMenuDivider();
     menu.addMenuItem(modal_about);
 });
