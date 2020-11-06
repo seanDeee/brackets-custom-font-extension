@@ -56,18 +56,26 @@ define(function (require, exports, module) {
     }
     
     function customFont12() {
-        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Segeo UI, sans-serif !important;}");
+        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: MS Sans Serif Regular !important;}");
     }
     
     function customFont13() {
+        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Segeo UI, sans-serif !important;}");
+    }
+    
+    function customFont14() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: 'Times New Roman', Times !important;}");
     }
+    
+    function customFont15() {
+        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Terminal, sans-serif !important;}");
+    }
 
-    function customFont14() {
+    function customFont16() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Trebuchet MS, sans-serif !important;}");
     }
 
-    function customFont15() {
+    function customFont17() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Verdana, sans-serif !important;}");
     }
 
@@ -122,16 +130,22 @@ define(function (require, exports, module) {
     CommandManager.register("monospace", custom_f11, customFont11);
     
     var custom_f12 = "cstm12.fonts";
-    CommandManager.register("Segeo UI", custom_f12, customFont12);
+    CommandManager.register("MS Sans Serif Regular", custom_f12, customFont12);
 
     var custom_f13 = "cstm13.fonts";
-    CommandManager.register("Times New Roman", custom_f13, customFont13);
+    CommandManager.register("Segeo UI", custom_f13, customFont13);
 
     var custom_f14 = "cstm14.fonts";
-    CommandManager.register("Trebuchet MS", custom_f14, customFont14);
+    CommandManager.register("Times New Roman", custom_f14, customFont14);
 
     var custom_f15 = "cstm15.fonts";
-    CommandManager.register("Verdana", custom_f15, customFont15);
+    CommandManager.register("Terminal", custom_f15, customFont15);
+    
+    var custom_f16 = "cstm16.fonts";
+    CommandManager.register("Trebuchet MS", custom_f16, customFont16);
+    
+    var custom_f17 = "cstm17.fonts";
+    CommandManager.register("Verdana", custom_f17, customFont17);
 
     // extension main menu
     Menus.addMenu('Fonts', 'fonts.main');
@@ -157,6 +171,8 @@ define(function (require, exports, module) {
     menu.addMenuItem(custom_f13);
     menu.addMenuItem(custom_f14);
     menu.addMenuItem(custom_f15);
+    menu.addMenuItem(custom_f16);
+    menu.addMenuItem(custom_f17);
     
     menu.addMenuDivider();
     menu.addMenuItem(modal_about);
