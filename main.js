@@ -10,7 +10,6 @@ define(function (require, exports, module) {
         Dialogs = brackets.getModule("widgets/Dialogs"),
         PreferencesManager = brackets.getModule("preferences/PreferencesManager");
 
-
     //Functions for each Custom Font
     function customFont1() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: 'SourceCodePro-Medium' ,ＭＳ ゴシック !important;}");
@@ -40,9 +39,9 @@ define(function (require, exports, module) {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: 'Didot', serif  !important;}");
     }
 
-    //function customFont8() {
-    //    ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Helvetica, sans-serif !important;}");
-    // }
+    function customFont8() {
+        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Helvetica, sans-serif !important;}");
+    }
 
     function customFont9() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Impact, fantasy !important;}");
@@ -60,9 +59,9 @@ define(function (require, exports, module) {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: 'Times New Roman', Times !important;}");
     }
 
-    // function customFont13() {
-    //ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Trebuchet MS, sans-serif !important;}");
-    //}
+    function customFont13() {
+        ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Trebuchet MS, sans-serif !important;}");
+    }
 
     function customFont14() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Verdana, sans-serif !important;}");
@@ -71,9 +70,6 @@ define(function (require, exports, module) {
     function customFont15() {
         ExtensionUtils.addEmbeddedStyleSheet(".CodeMirror{text-rendering: optimizeLegibility;font-family: Segeo UI, sans-serif !important;}");
     }
-
-
-
 
     //modal function in Custom Menu
     function aboutModal() {
@@ -90,7 +86,6 @@ define(function (require, exports, module) {
         // show modal dialog with "About Extension" information
         Dialogs.showModalDialog('a', "About Extension", displayAbout);
     }
-
 
     // Font Extension menu item
     var custom_f1 = "cstm1.fonts";
@@ -114,8 +109,8 @@ define(function (require, exports, module) {
     var custom_f7 = "cstm7.fonts";
     CommandManager.register("Didot", custom_f7, customFont7);
 
-    //var custom_f8 = "cstm8.fonts";
-    // CommandManager.register("Helvetica", custom_f8, customFont8);
+    var custom_f8 = "cstm8.fonts";
+    CommandManager.register("Helvetica", custom_f8, customFont8);
 
     var custom_f9 = "cstm9.fonts";
     CommandManager.register("Impact", custom_f9, customFont9);
@@ -129,8 +124,8 @@ define(function (require, exports, module) {
     var custom_f12 = "cstm12.fonts";
     CommandManager.register("Times New Roman", custom_f12, customFont12);
 
-    //var custom_f13 = "cstm13.fonts";
-    //CommandManager.register("Trebuchet MS", custom_f13, customFont13);
+    var custom_f13 = "cstm13.fonts";
+    CommandManager.register("Trebuchet MS", custom_f13, customFont13);
 
     var custom_f14 = "cstm14.fonts";
     CommandManager.register("Verdana", custom_f14, customFont14);
@@ -154,12 +149,12 @@ define(function (require, exports, module) {
     menu.addMenuItem(custom_f5);
     menu.addMenuItem(custom_f6);
     menu.addMenuItem(custom_f7);
-    //menu.addMenuItem(custom_f8);
+    menu.addMenuItem(custom_f8);
     menu.addMenuItem(custom_f9);
     menu.addMenuItem(custom_f10);
     menu.addMenuItem(custom_f11);
     menu.addMenuItem(custom_f12);
-    //menu.addMenuItem(custom_f13);
+    menu.addMenuItem(custom_f13);
     menu.addMenuItem(custom_f14);
     menu.addMenuItem(custom_f15);
     
