@@ -11,11 +11,14 @@ A Simple Font Select of you Choice for [Brackets](https://github.com/adobe/brack
 
 **OR**
 
-1. Download the **.zip** file
-2. In Brackets, navigate to **Help > Show Extensions Folder > User**
-3. Place the **.zip** file in the **User** folder
-4. Refresh Brackets and Find **Fonts** from **Menu...**
+1. Download the **.zip** file.
+2. In Brackets, navigate to **Help > Show Extensions Folder** and open the **user** folder.
+3. Extract the **.zip** file into the **user** folder.
 
+### How to Use
+1. Once installed make sure you restart the editor (**Debug > Reload With Extentions**)
+2. Choose an extention from the new menu **Fonts**
+3. ***Enjoy!***
 
 ## Screenshot
 
